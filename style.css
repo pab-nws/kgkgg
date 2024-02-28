@@ -1,0 +1,181 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Base (body, hn, p, a */
+
+body {
+  background-color: #d1cec3;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+/* Layout */
+.columns {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+
+.column-1 {
+  width: 66.66%;
+}
+
+.column-2 {
+  width: 33.33%;
+}
+
+/* Composants */
+.header {
+  display: flex;
+  gap: 4rem;
+}
+
+.header-logos {
+  height: -0px;
+  width: 90px;
+  top: 0%;
+}
+
+.header-image {
+  --radius: 50% 50% 0 0;
+  position: relative;
+  z-index: -1;
+  border: 2px solid;
+  border-radius: var(--radius);
+  outline: 1rem solid #d1cec3;
+  outline-offset: calc(-1rem - 1px);
+}
+
+.header-image::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  left: calc(-15px / 2);
+  top: 50%;
+  rotate: 45deg;
+}
+
+.header-image::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  right: calc(-15px / 2);
+  top: 50%;
+  rotate: 45deg;
+}
+
+.header-image::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  right: calc(-15px / 2);
+  top: 50%;
+  rotate: 45deg;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  object-fit: cover; /* /!\ spécifique au image */
+}
+
+.header-content span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: calc(-100% - 1rem);
+}
+
+.header-content {
+  position: relative;
+}
+
+.columns-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+.formations {
+  width: 40.4%;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  border-left: 1px solid black;
+  padding-left: 50px;
+}
+
+.columns-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+.experiences {
+  width: 40.4%;
+  display: table-cell;
+  vertical-align: middle;
+  position: 0;
+  top: 0;
+  border-left: 1px solid black;
+  padding-left: 50px;
+}
+
+.columns-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+.interets {
+  width: 40, 4%;
+}
+
+.coordonner {
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+  position: 0;
+  top: 50%;
+  padding-left: 50px;
+}
+
+.competences {
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+  position: 0;
+  top: 50%;
+  padding-left: 50px;
+}
+
+.interets {
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+  position: O;
+  top: 50%;
+  padding-left: 50px;
+}
